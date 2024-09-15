@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Cognifyz Calculator</title>
+    <link rel="stylesheet" href="Stylesheet2.css">
+</head>
+<body onload="displayGreeting()">
+    <div class="box">
+        <div class="container">
+            <h1>Cognifyz Technologies</h1>
+            <button class="color-button" onclick="changeColor()">Click to Change My Colour!</button>
+        </div>
+        <div class="container">
+            <h2>Basic Calculator</h2>
+            <input type="number" id="num1" placeholder="Enter first number" required><br>
+            <b style="font-size: 20px;">+</b>
+            <input type="number" id="num2" placeholder="Enter second number" required><br>
+            <button class="add-button" onclick="calculateSum()" style="font-weight: bold;">ADD</button>
+            <div class="result-container">
+                <span class="result-label">Result:</span>
+                <span id="result" style="font-weight: bold;"></span>
+            </div>
+        </div>
+    </div>
+    <div id="greetingModal" class="modal">
+        <div class="modal-content">
+            <p id="greetingMessage"></p>
+            <button class="start-button" onclick="closeModal()">Let's Start</button>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
